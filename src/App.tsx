@@ -13,6 +13,7 @@ import { CheckoutModal } from './components/CheckoutModal';
 import { Footer } from './components/Footer';
 import { BespokeFormula, CartItem, Perfume, ZodiacSign } from './types';
 import { ZODIAC_PERFUMES } from './data/zodiacData';
+import { heroCelestialPerfume, discoverySampleVault } from './assets/images';
 
 export default function App() {
   const [currency, setCurrency] = useState<'IDR' | 'USD'>('IDR');
@@ -100,7 +101,7 @@ export default function App() {
         priceUsd: formula.priceUsd,
         quantity: 1,
         engraving: formula.recipientName.toUpperCase(),
-        image: '/src/assets/images/hero_celestial_perfume_1792500257257.jpg',
+        image: heroCelestialPerfume,
         isBespoke: true,
         bespokeDetails: {
           sunSign: formula.sunSign,
@@ -149,7 +150,7 @@ export default function App() {
         priceIdr: 649000,
         priceUsd: 42,
         quantity: 1,
-        image: '/src/assets/images/discovery_sample_vault_1792500259529.jpg',
+        image: discoverySampleVault,
         discoveryItems: selectedPerfumes.map((p) => `${p.zodiacLabel}: ${p.name}`),
       },
     ]);

@@ -2,6 +2,7 @@ import React from 'react';
 import { Sparkles, Compass, ShieldCheck } from 'lucide-react';
 import { ZODIAC_PERFUMES } from '../data/zodiacData';
 import { ZodiacSign } from '../types';
+import { heroCelestialPerfume } from '../assets/images';
 
 interface HeroProps {
   onSelectZodiac: (sign: ZodiacSign) => void;
@@ -77,7 +78,7 @@ export const Hero: React.FC<HeroProps> = ({
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-2xl overflow-hidden border border-[#2b3154] bg-[#0c0f21] shadow-[0_20px_50px_rgba(0,0,0,0.6)] group">
               <img
-                src="/src/assets/images/hero_celestial_perfume_1792500257257.jpg"
+                src={heroCelestialPerfume}
                 alt="Flacon ASTRA SCENT Celestial Aether Eau de Parfum di atas batu meteorit berlatar bintang kosmik"
                 referrerPolicy="no-referrer"
                 className="w-full h-[400px] sm:h-[480px] lg:h-[500px] object-cover group-hover:scale-105 transition-transform duration-700"

@@ -3,6 +3,7 @@ import { Package, Check, Sparkles, X, Plus } from 'lucide-react';
 import { ZODIAC_PERFUMES } from '../data/zodiacData';
 import { Perfume } from '../types';
 import { formatPrice } from '../utils/astrology';
+import { discoverySampleVault } from '../assets/images';
 
 interface DiscoverySetBuilderProps {
   onAddDiscoverySet: (selectedPerfumes: Perfume[]) => void;
@@ -58,7 +59,7 @@ export const DiscoverySetBuilder: React.FC<DiscoverySetBuilderProps> = ({
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-2xl overflow-hidden border border-amber-400/40 shadow-[0_20px_50px_rgba(0,0,0,0.7)] group bg-[#080b18]">
               <img
-                src="/src/assets/images/discovery_sample_vault_1792500259529.jpg"
+                src={discoverySampleVault}
                 alt="Celestial Discovery Sample Set Box Astra Scent"
                 referrerPolicy="no-referrer"
                 className="w-full h-[380px] sm:h-[460px] object-cover group-hover:scale-105 transition-transform duration-700"

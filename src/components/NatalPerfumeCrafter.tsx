@@ -3,6 +3,7 @@ import { Compass, Sparkles, Moon, Sun, Award, Printer, ShoppingBag, Check, Rotat
 import { generateBespokeFormula, formatPrice } from '../utils/astrology';
 import { BespokeFormula, ZodiacSign } from '../types';
 import { ZODIAC_PERFUMES, ZODIAC_ELEMENT_INFO } from '../data/zodiacData';
+import { heroCelestialPerfume } from '../assets/images';
 
 interface NatalPerfumeCrafterProps {
   onAddBespokeToCart: (formula: BespokeFormula) => void;
@@ -195,7 +196,7 @@ export const NatalPerfumeCrafter: React.FC<NatalPerfumeCrafterProps> = ({
               <div className="lg:col-span-5 flex flex-col items-center">
                 <div className="relative w-full max-w-[280px] h-[360px] rounded-2xl overflow-hidden border border-amber-400/40 shadow-[0_0_30px_rgba(212,175,55,0.15)] bg-[#070914]">
                   <img
-                    src="/src/assets/images/hero_celestial_perfume_1792500257257.jpg"
+                    src={heroCelestialPerfume}
                     alt="Bespoke Natal Flacon"
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover"

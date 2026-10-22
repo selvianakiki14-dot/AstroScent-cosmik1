@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-cinzel: 'Cinzel', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+}
+
+.font-cinzel {
+  font-family: var(--font-cinzel);
+}
+
+.cosmic-radial-bg {
+  background: radial-gradient(ellipse 80% 50% at 50% -10%, rgba(120, 80, 180, 0.14), transparent 70%),
+              radial-gradient(ellipse 60% 40% at 90% 60%, rgba(197, 160, 89, 0.08), transparent 60%),
+              radial-gradient(ellipse 50% 50% at 10% 80%, rgba(45, 75, 140, 0.12), transparent 60%),
+              #06070e;
+}
+
+.starlight-grid {
+  background-image: radial-gradient(rgba(212, 175, 55, 0.12) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+
+/* Custom scrollbars for cosmic luxury feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #080a14;
+}
+::-webkit-scrollbar-thumb {
+  background: #25283d;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c5a059;
+}

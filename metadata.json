@@ -1,0 +1,6 @@
+{
+  "name": "ASTRA SCENT — Zodiac & Signature Perfumery",
+  "description": "Aplikasi parfum mewah berbasis astrologi: temukan aroma khas yang mewakili zodiak, tanggal lahir, dan energi kosmikmu. Your Zodiac, Your Signature Scent.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
